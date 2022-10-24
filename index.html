@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="incon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./css/cifra.css">
+    <title>Codificador</title>
+</head>
+
+<body>
+    <header>
+        <h1>Codificador</h1>
+        <p class="tex">Este é um codificador feito em JavaScript, ele usa duas linguagens de codificação: Cifra de Cesar e Base64.
+        </p>
+        <h3>Escolha um tipo de criptografia</h3>
+    </header>
+
+    <form>
+
+
+        <div id="trocar">
+
+            <select id="escolher" name="escolher" onchange="sumir()">
+                <option id="vazio" value="escolher" selected disabled>Selecione</option>
+                <option id="base64" value="b64">Base64</option>
+                <option id="cesar" value="cesar">Cifra de Cesar</option>
+            </select><br>
+            <textarea name="caixinha" id="caixinha" style="resize: none" cols="30" rows="8"
+                placeholder="Digite seu texto" required></textarea>
+
+        </div>
+
+        <div id="parametro">
+            <label for="inc" id="escnum" style="display: none">Coloque 1-26:</label>
+            <input type="number" id="incrementar" value="1" min="1" max="26" style="display: none">
+        </div>
+
+        <div id="mudar">
+            <input type="radio" name="radio" class="radio" id="txtc" oninput="trocarbutao()" checked>
+            <label for="txtc">Codificar</label>
+            <input type="radio" name="radio" class="radio" id="txtd" oninput="trocarbutao()">
+            <label for="txtd">Decodificar</label>
+        </div>
+
+        <div><textarea type="text" id="decodigo" style="resize: none" cols="30" rows="8" placeholder="Resultado"
+                readonly></textarea></div>
+        <input type="submit" id="btn" value="Codificar" onclick="toc()"><br>
+    </form>
+    <footer>
+
+
+    </footer>
+    <script src="./javascrpit/cifras.js"></script>
+</body>
+
+</html>

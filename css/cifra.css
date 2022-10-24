@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Courgette&family=Gloria+Hallelujah&family=Inconsolata&family=Sacramento&display=swap');
+
+:root{
+    --cor1:#7eb7aa;
+    --cor2:#97c9bf;
+    --cor3:#b0dbd5;
+    --cor4:#c9edea;
+    --cor5:#e2ffff;
+    --cor6:#1a4a4a;
+
+    --co11:#f3dcb2;
+    --co12:#facb97;
+    --co13:#f59982;
+    --co14:#ed616f;
+    --co15:#f2116c;
+}
+body{
+   background: -webkit-linear-gradient(#7eb7aa, #c9edea); 
+    background: -o-linear-gradient(#7eb7aa, #c9edea); 
+    background: -moz-linear-gradient(#7eb7aa, #c9edea); 
+    background: linear-gradient(#7eb7aa, #c9edea); 
+    font-family: 'Gloria Hallelujah', cursive;
+    color:var(--cor6)
+}
+::placeholder{
+    font-family: 'Gloria Hallelujah', cursive;
+}
+header{
+    text-align: center;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+h1{
+    font-size: 50px;
+}
+.tex{
+    font-size: 20px;
+}
+form{
+    margin-left: 550px;
+    border: 5px solid var(--cor6);
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-linear-gradient(#f3dcb2, #f2116c); 
+    background: -o-linear-gradient(#f3dcb2, #f2116c); 
+    background: -moz-linear-gradient(#f3dcb2, #f2116c); 
+    background: linear-gradient(#f3dcb2, #f2116c);
+}
+#escolher{
+    margin-left: 50px;
+    width: 150px;
+}
+#btn{
+    width: 100px;
+    height: 45px;
+    border: 5px solid var(--cor2);
+    border-radius: 90px;
+}
